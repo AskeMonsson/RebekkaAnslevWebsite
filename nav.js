@@ -2,17 +2,15 @@
 
 (function () {
   const pages = [
-    { label: 'Terapi',     href: '/subpages/terapi.html' },
+    { label: 'Terapi',                href: '/subpages/terapi.html' },
     { label: 'Workshops & foredrag',  href: '/subpages/workshops.html' },
-    { label: 'Forfatter',  href: '/subpages/forfatter.html' },
-    { label: 'Til virksomheder',    href: '/subpages/til_virksomheder.html' },
-    { label: 'Om mig',     href: '/subpages/om_mig.html' },
-    { label: 'Priser',     href: '/subpages/priser.html' },
-    { label: 'Kontakt',    href: '/subpages/kontakt.html' },
-
+    { label: 'Forfatter',             href: '/subpages/forfatter.html' },
+    { label: 'Til virksomheder',      href: '/subpages/til_virksomheder.html' },
+    { label: 'Om mig',                href: '/subpages/om_mig.html' },
+    { label: 'Priser',                href: '/subpages/priser.html' },
+    { label: 'Kontakt',               href: '/subpages/kontakt.html' },
   ];
 
-  // Mark active link based on current filename
   const current = window.location.pathname.split('/').pop() || 'index.html';
 
   const navLinks = pages.map(p => {
@@ -24,6 +22,13 @@
     `<a href="${p.href}">${p.label}</a>`
   ).join('');
 
+  const flagSVG = (w, h) => `
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 37 28" width="${w}" height="${h}" aria-hidden="true" style="display:block;border-radius:2px;">
+      <rect width="37" height="28" fill="#C60C30"/>
+      <rect x="11" width="5" height="28" fill="#fff"/>
+      <rect y="11.5" width="37" height="5" fill="#fff"/>
+    </svg>`;
+
   // Inject nav
   document.getElementById('site-nav').innerHTML = `
     <nav id="navbar">
@@ -32,12 +37,19 @@
         <span>Rebekka Anslev</span>
       </a>
       <ul class="nav-links">${navLinks}</ul>
-      <div class="hamburger" id="hamburger">
-        <span></span><span></span><span></span>
+      <div class="nav-right">
+        <a class="lang-switch" href="https://rebekkaanslev.dk" title="Gå til dansk side">
+          ${flagSVG(25, 19)}
+          <span>Dansk</span>
+        </a>
+        <div class="hamburger" id="hamburger">
+          <span></span><span></span><span></span>
+        </div>
       </div>
     </nav>
     <div class="mobile-menu" id="mobileMenu">
       ${mobileLinks}
+      </a>
     </div>
   `;
 

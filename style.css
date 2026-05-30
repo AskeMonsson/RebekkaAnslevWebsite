@@ -391,7 +391,19 @@ footer {
   color: var(--gold-light); font-weight: 300; margin-bottom: 10px; display: block;
 }
 
-
+/* ── Language switcher ── */
+.nav-right {
+  display: flex; align-items: center; gap: 16px;
+}
+.lang-switch {
+  display: flex; align-items: center; gap: 7px;
+  font-size: .68rem; letter-spacing: .1em; text-transform: uppercase;
+  color: var(--mid); transition: color .2s;
+  border: 1px solid var(--light-line); padding: 5px 11px;
+}
+.lang-switch:hover { color: var(--gold); border-color: var(--gold-light); }
+.lang-switch span { color: inherit; }
+.lang-switch--mobile { margin-top: 12px; font-size: .85rem; }
 
 
 /* ── Animations ── */
