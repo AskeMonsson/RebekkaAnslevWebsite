@@ -415,7 +415,6 @@ footer {
   .nav-links { display: none; }
   .hamburger { display: flex; }
   .hero { grid-template-columns: 1fr; }
-  .hero-image { display: none; }
   .hero-text { padding: 60px 24px; }
   .section { padding: 64px 24px; }
   .about-grid { grid-template-columns: 1fr; gap: 48px; }
