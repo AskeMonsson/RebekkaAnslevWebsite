@@ -6,8 +6,8 @@
     { label: 'Workshops & foredrag',  href: '/subpages/workshops.html' },
     { label: 'Forfatter',  href: '/subpages/forfatter.html' },
     { label: 'Til virksomheder',    href: '/subpages/til_virksomheder.html' },
-    { label: 'Priser',     href: '/subpages/priser.html' },
     { label: 'Om mig',     href: '/subpages/om_mig.html' },
+    { label: 'Priser',     href: '/subpages/priser.html' },
     { label: 'Kontakt',    href: '/subpages/kontakt.html' },
 
   ];
