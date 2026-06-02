@@ -2,13 +2,13 @@
 
 (function () {
   const pages = [
-    { label: 'Terapi',                href: '/subpages/terapi.html' },
-    { label: 'Workshops & foredrag',  href: '/subpages/workshops.html' },
-    { label: 'Forfatter',             href: '/subpages/forfatter.html' },
-    { label: 'Til virksomheder',      href: '/subpages/til_virksomheder.html' },
-    { label: 'Om mig',                href: '/subpages/om_mig.html' },
-    { label: 'Priser',                href: '/subpages/priser.html' },
-    { label: 'Kontakt',               href: '/subpages/kontakt.html' },
+    { label: 'Therapy',                href: '/subpages/therapy.html' },
+    { label: 'Workshops & Talks',  href: '/subpages/workshops.html' },
+    { label: 'Author',             href: '/subpages/author.html' },
+    { label: 'For businesses',      href: '/subpages/for_businesses.html' },
+    { label: 'About me',                href: '/subpages/about_me.html' },
+    { label: 'Prices',                href: '/subpages/prices.html' },
+    { label: 'Contact',               href: '/subpages/contact.html' },
   ];
 
   const current = window.location.pathname.split('/').pop() || 'index.html';
